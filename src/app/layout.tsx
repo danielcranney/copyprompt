@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Copyprompt",
+  title: "Copyprompt - Roleplay prompts to get better results from AI",
   description: "Roleplay prompts to get better results from AI",
 };
 
