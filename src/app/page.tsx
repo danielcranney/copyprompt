@@ -1,8 +1,5 @@
 "use client";
 import {
-  Github,
-  Twitter,
-  Copy,
   Lightbulb,
   BarChart3,
   Palette,
@@ -15,7 +12,6 @@ import {
   FileText,
   Users,
   Info,
-  ExternalLink,
   Home as HomeIcon,
 } from "lucide-react";
 import { useState } from "react";
@@ -91,22 +87,6 @@ const GitIcon = (props: React.SVGProps<SVGSVGElement>) => (
     />
   </svg>
 );
-
-// Define the color palette to cycle through
-const cardColors = [
-  { bg: "bg-yellow-400", hover: "hover:bg-yellow-500" },
-  { bg: "bg-sky-400", hover: "hover:bg-sky-500" },
-  { bg: "bg-emerald-400", hover: "hover:bg-emerald-500" },
-  { bg: "bg-rose-400", hover: "hover:bg-rose-500" },
-  { bg: "bg-purple-400", hover: "hover:bg-purple-500" },
-  { bg: "bg-orange-300", hover: "hover:bg-orange-400" },
-  { bg: "bg-pink-400", hover: "hover:bg-pink-500" },
-  { bg: "bg-teal-400", hover: "hover:bg-teal-500" },
-  { bg: "bg-lime-300", hover: "hover:bg-lime-400" },
-  { bg: "bg-indigo-300", hover: "hover:bg-indigo-400" },
-  { bg: "bg-cyan-300", hover: "hover:bg-cyan-400" },
-  { bg: "bg-fuchsia-300", hover: "hover:bg-fuchsia-400" },
-];
 
 const cards = [
   {
@@ -1168,7 +1148,7 @@ export default function Home() {
         </Link>
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/danielcranney"
+            href="https://github.com/danielcranney/promptr"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
