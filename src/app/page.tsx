@@ -87,15 +87,15 @@ export default function Home() {
   const [modalCopied, setModalCopied] = useState(false);
   const [customInputs, setCustomInputs] = useState<Record<string, string>>({});
 
-  const getCustomizedPrompt = (text: string) => {
-    let customizedText = text;
+  const getCustomisedPrompt = (text: string) => {
+    let customisedText = text;
     Object.entries(customInputs).forEach(([key, value]) => {
-      customizedText = customizedText.replace(
+      customisedText = customisedText.replace(
         new RegExp(`\\[${key}\\]`, "g"),
         value || `[${key}]`
       );
     });
-    return customizedText;
+    return customisedText;
   };
 
   const copyToClipboard = async (
@@ -103,8 +103,8 @@ export default function Home() {
     index?: number,
     isModal?: boolean
   ) => {
-    const customizedText = getCustomizedPrompt(text);
-    await navigator.clipboard.writeText(customizedText);
+    const customisedText = getCustomisedPrompt(text);
+    await navigator.clipboard.writeText(customisedText);
     if (isModal) {
       setModalCopied(true);
       setTimeout(() => setModalCopied(false), 1000);
@@ -294,7 +294,7 @@ export default function Home() {
                 {modalCard.title}
               </h2>
 
-              {/* Customization Fields */}
+              {/* Customisation Fields */}
               <div className="space-y-4 mb-6">
                 {modalCard.fullText
                   .match(/\[([^\]]+)\]/g)

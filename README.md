@@ -45,3 +45,20 @@ To add or edit prompts in the app:
 
 3. Add a new object to the array for your new prompt, or edit an existing one.
 4. Save the file.
+
+## Using Placeholders in Prompts
+
+You can make your prompts customisable by including **placeholders** in the `fullText` property of each prompt object. Placeholders are written in square brackets, like `[placeholderName]`.
+
+When a prompt contains one or more placeholders, the app will automatically generate input fields for each unique placeholder. Users can fill in these fields, and the values will be inserted into the prompt when they copy it.
+
+**Example:**
+
+```js
+{
+  title: "Career Coach",
+  fullText: `Help the user improve their [careerDocument] for a [jobType] position.`
+}
+```
+
+In this example, the modal will show two input fields: one for `careerDocument` and one for `jobType`. If the user enters "resume" and "developer", the copied prompt will read: **Help the user improve their resume for a developer position.**

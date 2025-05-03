@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Promptr",
-  description: "A prompt library for everyone",
+  title: "Copyprompt",
+  description: "Roleplay prompts to get better results from AI",
 };
 
 export default function RootLayout({
