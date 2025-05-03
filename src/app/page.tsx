@@ -132,7 +132,7 @@ export default function Home() {
         </Link>
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/danielcranney/promptr"
+            href="https://github.com/danielcranney/copyprompt"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-80 transition-opacity"
